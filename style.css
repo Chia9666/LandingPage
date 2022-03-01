@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    color:aliceblue;
+    color: aliceblue;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
@@ -23,16 +23,23 @@ nav {
     padding: 2% 6%;
 }
 
-nav a, .nav-links ul li a  {
+nav a,
+.nav-links ul li a {
     font-size: 18px;
     color: rgb(223, 223, 223);
     text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header nav a {
+    display: flex;
+    align-items: center;
 }
 
 nav img {
+    margin: 5px;
     width: auto;
-    height: 50px;
+    height: 35px;
 }
 
 .nav-links {
@@ -47,7 +54,7 @@ nav img {
     position: relative;
 }
 
-.nav-links ul li::after  {
+.nav-links ul li::after {
     content: '';
     width: 0%;
     height: 2px;
@@ -66,7 +73,7 @@ nav img {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .header-left {
@@ -74,12 +81,18 @@ nav img {
 }
 
 .map-img {
-    max-width: 600px;
+    max-width: 640px;
     height: auto;
 }
 
-.header-left button {
-    background-color: rgb(53, 211, 250);
+.cta {
+    background-color: #c4c4f7;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    font-size: 20px;
 }
 
 .header-left h1 {
@@ -98,7 +111,7 @@ nav img {
 
 .header-left p {
     font-size: 15px;
-    color: rgb(240, 218, 240);
+    color: rgb(255, 255, 255);
     line-height: 31.5px;
     font-weight: 400;
     letter-spacing: 8px;

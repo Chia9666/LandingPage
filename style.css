@@ -195,9 +195,9 @@ nav img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 75px;
     width: 100%;
-    margin: auto;
+    margin: 0;
 
 }
 
@@ -271,22 +271,35 @@ nav img {
 
 .quoteLayer {
     background-image: url(../LandingPage/images/westdragon.jpg);
-}
-
-.quoteBox {
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+}
+
+/*
+.quoteBox {   
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    margin-top: 5%;
+    margin-top: 2%;
     padding: 20%;
 }
+*/
 
-.quote {
-    border: 1px solid red;
+.quote h3 {
+    padding: 10vh 15vw 10vh 15vw;
+    font-size: 2.2rem;
+    color: #7fb1f7;
+    font-style: italic;
 }
 
-.quoteBy {
-    border: 1px solid red;
+.quoteBy h4 {
+    color: #3b89f7;
 }
